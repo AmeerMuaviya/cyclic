@@ -26,7 +26,7 @@ const connectDB = async () => {
 }
 
 connectDB().then(() => {
-  app.listen(PORT, () => {
+  app.listen(3000, () => {
       console.log("listening for requests");
   })
 })
