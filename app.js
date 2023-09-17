@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 
  const app= express();
   dotenv.config();
-mongoose.connect(process.env.DATABASE_URL).then((result) => {
+mongoose.connect(process.env.MY_URL).then((result) => {
     
 app.get('/',  function(req,res){
     var response={message:"'app is live now...'"}
